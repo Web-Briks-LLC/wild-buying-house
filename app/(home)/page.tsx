@@ -1,4 +1,6 @@
 import AboutWild from "./_sections/AboutWild";
+import BusinessOverviewVideo from "./_sections/BusinessOverviewVideo";
+import ChinaFactoryReels from "./_sections/ChinaFactoryReels";
 import ClientFeedBack from "./_sections/ClientFeedBack";
 import Compliance from "./_sections/Compliance";
 import Contact from "./_sections/Contact";
@@ -20,6 +22,9 @@ export default function Home() {
       <Prefer/>
       <ClientFeedBack/>
       <Compliance/>
+      <BusinessOverviewVideo/>
+
+      <ChinaFactoryReels/>
       <ProductionGallery/>
       <Contact/>
       <Footer/>
