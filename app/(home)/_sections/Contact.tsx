@@ -249,9 +249,7 @@ const Contact = () => {
                   Call Us
                 </h4>
                 <p className="text-[#D1D5DB] font-['Inter'] font-normal text-[14px] leading-[20px]">
-                  +880 2 9876543 (BD)
-                  <br />
-                  +1 800 123 4567 (US Toll Free)
+                  +880 1790 885188
                 </p>
               </div>
             </div>

@@ -7,11 +7,13 @@ import { motion } from 'framer-motion';
 const Footer = () => {
 
   const categories = [
-    "Woven Apparels",
-    "Knitwear",
-    "Denim Bottoms",
-    "Heavy Outerwear",
-    "Kids Collections"
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Services", href: "#services" },
+    { name: "Products", href: "#products" },
+    { name: "Clients", href: "#clients" },
+    { name: "Gallery", href: "#gallery" },
+    { name: "Contact", href: "#contact" }
   ];
 
   const socialLinks = [
@@ -37,8 +39,7 @@ const Footer = () => {
               WILD.
             </div>
             <p className="text-[#9CA3AF] font-['Inter'] font-normal text-[14px] leading-[22.75px] mb-8 max-w-[320px]">
-              Your strategic partner for end-to-end apparel sourcing and manufacturing in
-              Bangladesh. Quality, ethics, and timeliness are in our DNA.
+              From concept to warehouse delivery in just 14 days, we provide the speed of retail with the scale of wholesale. Backed by 22 years of denim mastery.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social, index) => (
@@ -55,16 +56,16 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Categories */}
+          {/* Quick Links / Categories */}
           <div className="lg:col-span-2">
             <h4 className="text-white font-['Poppins'] font-bold text-[16px] leading-[24px] tracking-[0.4px] mb-8 uppercase">
-              Categories
+              Quick Links
             </h4>
             <ul className="space-y-4">
               {categories.map((cat) => (
-                <li key={cat}>
-                  <a href="#" className="text-[#D1D5DB] font-['Inter'] font-normal text-[14px] leading-[20px] hover:text-[#C81F08] transition-colors">
-                    {cat}
+                <li key={cat.name}>
+                  <a href={cat.href} className="text-[#D1D5DB] font-['Inter'] font-normal text-[14px] leading-[20px] hover:text-[#C81F08] transition-colors">
+                    {cat.name}
                   </a>
                 </li>
               ))}
@@ -72,12 +73,12 @@ const Footer = () => {
           </div>
 
           {/* Newsletter Section */}
-          <div className="lg:col-span-4">
+          <div className="lg:col-span-4 lg:col-start-9">
             <h4 className="text-white font-['Poppins'] font-bold text-[16px] leading-[24px] tracking-[0.4px] mb-8 uppercase">
               Newsletter
             </h4>
             <p className="text-[#9CA3AF] font-['Inter'] font-normal text-[14px] leading-[22.75px] mb-6">
-              Subscribe to our newsletter for insights on BD apparel market and sustainable sourcing.
+              Subscribe to our newsletter for insights on denim manufacturing, market trends, and sustainable sourcing.
             </p>
             <div className="space-y-3">
               <input 
@@ -97,13 +98,13 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-[rgba(255,255,255,0.10)] flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-[#6B7280] font-['Inter'] font-normal text-[12px] leading-[16px]">
-            © 2026 Wild Sourcing Ltd. All rights reserved.
+            © {new Date().getFullYear()} Wild Fashion. All rights reserved.
           </p>
           <div className="flex gap-8">
-            <a href="#" className="text-[#6B7280] font-['Inter'] font-normal text-[12px] hover:text-white transition-colors">
+            <a href="/privacy-policy" className="text-[#6B7280] font-['Inter'] font-normal text-[12px] hover:text-white transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="text-[#6B7280] font-['Inter'] font-normal text-[12px] hover:text-white transition-colors">
+            <a href="/terms-and-conditions" className="text-[#6B7280] font-['Inter'] font-normal text-[12px] hover:text-white transition-colors">
               Terms of Service
             </a>
           </div>
