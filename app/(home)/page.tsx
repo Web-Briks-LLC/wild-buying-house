@@ -5,6 +5,7 @@ import ClientFeedBack from "./_sections/ClientFeedBack";
 import Compliance from "./_sections/Compliance";
 import Contact from "./_sections/Contact";
 import Expertise from "./_sections/Expertise";
+import FactoryVideos from "./_sections/FactoryVideo";
 import Footer from "./_sections/Footer";
 import Hero from "./_sections/Hero";
 import Prefer from "./_sections/Prefer";
@@ -16,6 +17,7 @@ export default function Home() {
     <div>
       {/* Hero Section */}
       <Hero />
+      <FactoryVideos />
       <AboutWild/>
       <Services/>
       <Expertise/>
@@ -23,7 +25,6 @@ export default function Home() {
       <ClientFeedBack/>
       <Compliance/>
       <BusinessOverviewVideo/>
-
       <ChinaFactoryReels/>
       <ProductionGallery/>
       <Contact/>

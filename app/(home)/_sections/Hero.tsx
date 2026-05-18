@@ -79,9 +79,12 @@ const Hero = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <button className="bg-[#C81F08] text-white px-6 py-2.5 rounded-[4px] font-['Inter'] font-medium text-[16px] leading-[24px] transition-transform hover:scale-105 active:scale-95">
-              Get a Quote
-            </button>
+          <a
+  href="#quote"
+  className="bg-[#C81F08] text-white px-6 py-2.5 rounded-[4px] font-['Inter'] font-medium text-[16px] leading-[24px] transition-transform hover:scale-105 active:scale-95 inline-block"
+>
+  Get a Quote
+</a>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -102,7 +105,7 @@ const Hero = () => {
               {['Home', 'About', 'Services', 'Products', 'Clients', 'Gallery', 'Contact'].map((link) => (
                 <a key={link} href="#" className="text-white text-lg border-b border-white/10 pb-2">{link}</a>
               ))}
-              <button className="bg-[#C81F08] text-white py-3 rounded-[4px]">Get a Quote</button>
+              <button className="bg-[#C81F08] text-white py-3 rounded-[4px] cursor-pointer"><a href="#quote">Get a Quote</a></button>
             </motion.div>
           )}
         </AnimatePresence>
