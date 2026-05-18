@@ -61,8 +61,8 @@ const Services = () => {
   };
 
   return (
-    <section className="bg-[#F8FAFC] py-[96px]">
-      <div className="max-w-[1440px] mx-auto px-6">
+    <section className="bg-[#F8FAFC] py-20">
+      <div className="max-w-[1440px] mx-auto px-6"  id='services'>
         
         {/* Section Header */}
         <motion.div 

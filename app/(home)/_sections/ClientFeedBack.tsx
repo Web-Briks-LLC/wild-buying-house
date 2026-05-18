@@ -40,7 +40,7 @@ const ClientFeedBack = () => {
   }, []);
 
   return (
-    <section className="bg-[#F8FAFC] py-[96px] overflow-hidden">
+    <section className="bg-[#F8FAFC] py-20 overflow-hidden" id='clients'>
       {/* Header Section - Centered */}
       <div className="max-w-[1440px] mx-auto text-center mb-16 px-6">
         <span className="text-[#1E1E1E] font-['Poppins'] font-bold text-[16px] leading-[24px] tracking-[0.8px] uppercase mb-2 block">

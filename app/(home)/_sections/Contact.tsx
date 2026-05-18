@@ -53,7 +53,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-white py-[96px]" id="quote">
+    <section className="bg-white py-[96px]" id="contact">
       {/* Changed items-start to items-stretch to force exact equal heights */}
       <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
         

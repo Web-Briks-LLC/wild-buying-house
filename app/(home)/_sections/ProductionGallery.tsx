@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const ProductionGallery = () => {
   return (
-    <section className="bg-[#111827] py-[96px]">
+    <section className="bg-[#111827] py-[96px]" id='gallery'>
       <div className="max-w-[1440px] mx-auto px-6">
         
         {/* Header Section */}

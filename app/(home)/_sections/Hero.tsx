@@ -80,7 +80,7 @@ const Hero = () => {
           {/* Desktop CTA */}
           <div className="hidden md:block">
             <a
-              href="#quote"
+              href="#contact"
               className="bg-[#C81F08] text-white px-6 py-2.5 rounded-[4px] font-['Inter'] font-medium text-[16px] leading-[24px] transition-transform hover:scale-105 active:scale-95 inline-block"
             >
               Get a Quote
@@ -114,7 +114,7 @@ const Hero = () => {
               ))}
               <button className="bg-[#C81F08] text-white py-3 rounded-[4px] cursor-pointer w-full text-left px-4 mt-2">
                 <a 
-                  href="#quote" 
+                  href="#contact" 
                   onClick={() => setIsMenuOpen(false)}
                   className="w-full block"
                 >
@@ -153,7 +153,7 @@ const Hero = () => {
             <a href="#quote" className="bg-[#C81F08] text-white px-8 py-4 rounded-[4px] font-['Inter'] font-medium text-[18px] leading-[28px] transition-all hover:bg-[#b01b07] inline-block">
               Start Your Collection
             </a>
-            <a href="#about" className="bg-transparent border border-white text-white px-8 py-4 rounded-[4px] font-['Inter'] font-medium text-[18px] leading-[28px] transition-all hover:bg-white/10 inline-block">
+            <a href="#products" className="bg-transparent border border-white text-white px-8 py-4 rounded-[4px] font-['Inter'] font-medium text-[18px] leading-[28px] transition-all hover:bg-white/10 inline-block">
               View Our Capabilities
             </a>
           </motion.div>

@@ -37,7 +37,7 @@ const Expertise = () => {
   };
 
   return (
-    <section className="bg-white py-[96px]">
+    <section className="bg-white py-10" id='products'>
       <div className="max-w-[1440px] mx-auto px-6">
         
         {/* Header Section */}

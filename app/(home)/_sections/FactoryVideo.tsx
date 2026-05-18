@@ -3,7 +3,7 @@ import { Factory, MapPin } from "lucide-react";
 
 export default function FactoryVideos() {
   return (
-    <section className="w-full bg-[#FAFAFA] pt-20 lg:pb-20 px-6">
+    <section className="w-full bg-[#FAFAFA] pt-20 lg:pb-20 px-6" id="about">
       <div className="max-w-360 mx-auto">
         
         {/* HEADER */}
@@ -34,7 +34,7 @@ export default function FactoryVideos() {
                 playsInline
                 className="w-full h-full object-cover"
               >
-                <source src="https://cdn.wildbd.com/Wild-Rmg/wild-rmg-bd.mp4" type="video/mp4" />
+                <source src="https://cdn.wildbd.com/wild-buying-house/wild-rmg-bd.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
               
@@ -65,7 +65,7 @@ export default function FactoryVideos() {
           {/* CHINA FACTORY */}
           <div className="group flex flex-col bg-white rounded-xl border border-[#F3E6E4] shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden transition-all duration-300 hover:shadow-[0_8px_30px_rgb(211,58,39,0.08)] hover:border-[#D33A27]/30">
             {/* Video Wrapper */}
-            <div className="relative aspect-[16/9] w-full bg-gray-100 overflow-hidden">
+            <div className="relative aspect-video w-full bg-gray-100 overflow-hidden">
               <video
                 autoPlay
                 loop
@@ -73,7 +73,7 @@ export default function FactoryVideos() {
                 playsInline
                 className="w-full h-full object-cover"
               >
-                <source src="https://cdn.wildbd.com/Wild-Rmg/wild-rmg-china.mp4" type="video/mp4" />
+                <source src="https://cdn.wildbd.com/wild-buying-house/wild-rmg-china.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
 
