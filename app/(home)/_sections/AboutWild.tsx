@@ -94,23 +94,19 @@ const AboutWild = () => {
             variants={itemVariants}
             className="text-[#1E1E1E] font-bold text-[16px] leading-[24px] tracking-[0.8px] uppercase mb-4"
           >
-            About Wild
+            The WiLD Design Studio
           </motion.span>
 
           <motion.h2 variants={itemVariants} className="font-bold text-[36px] md:text-[44px] leading-[1.1] mb-6">
-            <span style={{ color: '#C81F08' }}>Excellence in Apparel</span>{' '}
-            <span className="text-[#0A1628]">Sourcing & Manufacturing</span>
+            <span style={{ color: '#C81F08' }}>Where Creativity Meets</span>{' '}
+            <span className="text-[#0A1628]">Performance</span>
           </motion.h2>
 
           <motion.p 
             variants={itemVariants}
             className="font-inter font-normal text-[#4B5563] text-[16px] md:text-[18px] leading-[28px] mb-10"
           >
-            Established in Dhaka, Bangladesh, WILD is a premier buying house and
-            apparel sourcing agent. We offer comprehensive supply chain solutions for
-            fashion apparel networks worldwide. With deep industry knowledge and an
-            extensive network of compliant factories, we deliver high-quality garments
-            on time, every time.
+            Our design studio is more than a workspace; it is a creative engine where &quot;classics with a twist&quot; are born. We are creative partners blending high-volume capability with boutique agility.
           </motion.p>
 
           <div className="space-y-5">
@@ -124,11 +120,10 @@ const AboutWild = () => {
               </div>
               <div>
                 <h4 className="text-[#0A1628] font-bold text-[18px] mb-1">
-                  Our Mission
+                  Trend-Driven & Effortless Style
                 </h4>
                 <p className="font-inter font-normal text-[#4B5563] text-[15px] leading-[22px]">
-                  To be the most reliable and innovative sourcing partner, ensuring
-                  sustainable and ethical production for global brands.
+                  Our research teams track global fashion shifts to ensure your collections are ahead of the curve, designing eclectic pieces for premium, everyday wearability.
                 </p>
               </div>
             </motion.div>
@@ -143,11 +138,10 @@ const AboutWild = () => {
               </div>
               <div>
                 <h4 className="text-[#0A1628] font-bold text-[18px] mb-1">
-                  Our Vision
+                  Brand & Digital Integration
                 </h4>
                 <p className="font-inter font-normal text-[#4B5563] text-[15px] leading-[22px]">
-                  To lead the global apparel supply chain with unparalleled quality,
-                  transparency, and unwavering integrity.
+                  We help establish your brand—from custom label preparation and inspections to providing SEO-optimized content, digital catalogs, and short-form video assets.
                 </p>
               </div>
             </motion.div>

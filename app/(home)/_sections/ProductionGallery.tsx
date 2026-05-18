@@ -67,17 +67,6 @@ const ProductionGallery = () => {
             />
           </div>
         </div>
-
-        {/* CTA Button */}
-        <div className="flex justify-center">
-          <motion.button 
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="border border-white text-white px-8 py-3 rounded-[4px] font-['Inter'] font-medium text-[14px] leading-[20px] tracking-[0.7px] uppercase transition-colors hover:bg-white hover:text-[#111827]"
-          >
-            View Full Gallery
-          </motion.button>
-        </div>
       </div>
     </section>
   );

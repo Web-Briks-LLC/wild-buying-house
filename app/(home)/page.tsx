@@ -24,8 +24,8 @@ export default function Home() {
       <Prefer/>
       <ClientFeedBack/>
       <Compliance/>
-      <BusinessOverviewVideo/>
-      <ChinaFactoryReels/>
+      {/* <BusinessOverviewVideo/> */}
+      {/* <ChinaFactoryReels/> */}
       <ProductionGallery/>
       <Contact/>
       <Footer/>

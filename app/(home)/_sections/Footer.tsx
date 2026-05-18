@@ -5,13 +5,6 @@ import { FaLinkedinIn, FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/f
 import { motion } from 'framer-motion';
 
 const Footer = () => {
-  const quickLinks = [
-    "Company Profile",
-    "Our Services",
-    "Product Portfolio",
-    "Client Reviews",
-    "Compliance & CSR"
-  ];
 
   const categories = [
     "Woven Apparels",
@@ -60,22 +53,6 @@ const Footer = () => {
                 </motion.a>
               ))}
             </div>
-          </div>
-
-          {/* Quick Links */}
-          <div className="lg:col-span-2">
-            <h4 className="text-white font-['Poppins'] font-bold text-[16px] leading-[24px] tracking-[0.4px] mb-8 uppercase">
-              Quick Links
-            </h4>
-            <ul className="space-y-4">
-              {quickLinks.map((link) => (
-                <li key={link}>
-                  <a href="#" className="text-[#D1D5DB] font-['Inter'] font-normal text-[14px] leading-[20px] hover:text-[#C81F08] transition-colors">
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
           </div>
 
           {/* Categories */}

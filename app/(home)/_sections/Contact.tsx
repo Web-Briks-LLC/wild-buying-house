@@ -53,8 +53,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-white py-24" id="quote">
-      <div className="max-w-360 mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+    <section className="bg-white py-[96px]" id="quote">
+      {/* Changed items-start to items-stretch to force exact equal heights */}
+      <div className="max-w-[1440px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+        
         {/* Left Side: Contact Form */}
         <motion.div
           initial="hidden"
@@ -180,60 +182,83 @@ const Contact = () => {
           className="rounded-[8px] overflow-hidden flex flex-col h-full shadow-2xl"
         >
           {/* Top Info Panel */}
-          <div className="bg-[#0A1628] p-10 space-y-10">
+          <div className="bg-[#0A1628] p-10 flex flex-col gap-8">
             <h3 className="text-[#F7941D] font-['Poppins'] font-bold text-[24px] leading-[32px]">
               Our Offices
             </h3>
 
-            <div className="space-y-8">
-              {/* Location */}
-              <div className="flex gap-4">
-                <MapPin className="text-[#F7941D] flex-shrink-0" size={24} />
-                <div>
-                  <h4 className="text-white font-['Poppins'] font-bold text-[18px] leading-[28px] mb-1">
-                    Head Office - Dhaka
-                  </h4>
-                  <p className="text-[#D1D5DB] font-['Inter'] font-normal text-[14px] leading-[20px]">
-                    House 45, Road 12, Dhanmondi
-                    <br />
-                    Dhaka-1213, Bangladesh
-                  </p>
+            {/* Locations */}
+            <div className="flex gap-4">
+              <MapPin className="text-[#F7941D] flex-shrink-0 mt-1" size={24} />
+              <div className="flex-1">
+                <h4 className="text-white font-['Poppins'] font-bold text-[18px] leading-[28px] mb-4">
+                  Global Locations
+                </h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-6">
+                  <div>
+                    <h5 className="text-white font-['Inter'] font-semibold text-[14px] mb-1">USA HQ</h5>
+                    <p className="text-[#D1D5DB] font-['Inter'] font-normal text-[13px] leading-[18px]">
+                      45-16 49th St, Apt #2C<br />
+                      Woodside, NY 11377
+                    </p>
+                  </div>
+                  <div>
+                    <h5 className="text-white font-['Inter'] font-semibold text-[14px] mb-1">Dubai</h5>
+                    <p className="text-[#D1D5DB] font-['Inter'] font-normal text-[13px] leading-[18px]">
+                      17 Beirut St, New Ind. Area 2<br />
+                      Ajman, UAE
+                    </p>
+                  </div>
+                  <div>
+                    <h5 className="text-white font-['Inter'] font-semibold text-[14px] mb-1">China</h5>
+                    <p className="text-[#D1D5DB] font-['Inter'] font-normal text-[13px] leading-[18px]">
+                      Zain Int. Co. Ltd, Hung To Ctr.<br />
+                      Kwun Tong, Hong Kong
+                    </p>
+                  </div>
+                  <div>
+                    <h5 className="text-white font-['Inter'] font-semibold text-[14px] mb-1">Bangladesh</h5>
+                    <p className="text-[#D1D5DB] font-['Inter'] font-normal text-[13px] leading-[18px]">
+                      57/C Asad Avenue<br />
+                      Mohammadpur, Dhaka-1207
+                    </p>
+                  </div>
                 </div>
               </div>
+            </div>
 
-              {/* Email */}
-              <div className="flex gap-4">
-                <Mail className="text-[#F7941D] flex-shrink-0" size={24} />
-                <div>
-                  <h4 className="text-white font-['Poppins'] font-bold text-[18px] leading-[28px] mb-1">
-                    Email Us
-                  </h4>
-                  <p className="text-[#D1D5DB] font-['Inter'] font-normal text-[14px] leading-[20px]">
-                    saraf@wild.bd <br />
-                    rasheda@wild.bd
-                  </p>
-                </div>
+            {/* Original Email */}
+            <div className="flex gap-4 pt-2 border-t border-white/10">
+              <Mail className="text-[#F7941D] flex-shrink-0" size={24} />
+              <div>
+                <h4 className="text-white font-['Poppins'] font-bold text-[18px] leading-[28px] mb-1">
+                  Email Us
+                </h4>
+                <p className="text-[#D1D5DB] font-['Inter'] font-normal text-[14px] leading-[20px]">
+                  saraf@wild.bd <br />
+                  rasheda@wild.bd
+                </p>
               </div>
+            </div>
 
-              {/* Call */}
-              <div className="flex gap-4">
-                <PhoneCall className="text-[#F7941D] flex-shrink-0" size={24} />
-                <div>
-                  <h4 className="text-white font-['Poppins'] font-bold text-[18px] leading-[28px] mb-1">
-                    Call Us
-                  </h4>
-                  <p className="text-[#D1D5DB] font-['Inter'] font-normal text-[14px] leading-[20px]">
-                    +880 2 9876543 (BD)
-                    <br />
-                    +1 800 123 4567 (US Toll Free)
-                  </p>
-                </div>
+            {/* Original Phone */}
+            <div className="flex gap-4">
+              <PhoneCall className="text-[#F7941D] flex-shrink-0" size={24} />
+              <div>
+                <h4 className="text-white font-['Poppins'] font-bold text-[18px] leading-[28px] mb-1">
+                  Call Us
+                </h4>
+                <p className="text-[#D1D5DB] font-['Inter'] font-normal text-[14px] leading-[20px]">
+                  +880 2 9876543 (BD)
+                  <br />
+                  +1 800 123 4567 (US Toll Free)
+                </p>
               </div>
             </div>
           </div>
 
           {/* Bottom Image Panel */}
-          <div className="relative flex-grow min-h-[300px] w-full bg-[#0A1628]">
+          <div className="relative flex-grow min-h-[180px] w-full bg-[#0A1628]">
             <Image
               src="/images/map.png"
               alt="Global Network"

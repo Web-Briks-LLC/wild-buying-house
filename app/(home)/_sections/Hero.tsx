@@ -7,10 +7,10 @@ const Hero = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const stats = [
-    { number: '15+', label: 'Years Experience' },
-    { number: '250+', label: 'Global Clients' },
-    { number: '100M+', label: 'Products Shipped' },
-    { number: '45+', label: 'Export Countries' },
+    { number: '22+', label: 'Years Experience' },
+    { number: '14', label: 'Day Lead Time' },
+    { number: '100-10K', label: 'MOQ (Pcs)' },
+    { number: '4+', label: 'Global Offices' },
   ];
 
   // Animation Variants
@@ -36,7 +36,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen w-full flex flex-col overflow-hidden">
+    <section id="home" className="relative min-h-screen w-full flex flex-col overflow-hidden">
       {/* Background Image & Overlay */}
       <div 
         className="absolute inset-0 z-0"
@@ -79,12 +79,12 @@ const Hero = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-          <a
-  href="#quote"
-  className="bg-[#C81F08] text-white px-6 py-2.5 rounded-[4px] font-['Inter'] font-medium text-[16px] leading-[24px] transition-transform hover:scale-105 active:scale-95 inline-block"
->
-  Get a Quote
-</a>
+            <a
+              href="#quote"
+              className="bg-[#C81F08] text-white px-6 py-2.5 rounded-[4px] font-['Inter'] font-medium text-[16px] leading-[24px] transition-transform hover:scale-105 active:scale-95 inline-block"
+            >
+              Get a Quote
+            </a>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -103,9 +103,24 @@ const Hero = () => {
               className="md:hidden absolute top-full left-0 w-full bg-black/95 p-6 flex flex-col gap-4 overflow-hidden"
             >
               {['Home', 'About', 'Services', 'Products', 'Clients', 'Gallery', 'Contact'].map((link) => (
-                <a key={link} href="#" className="text-white text-lg border-b border-white/10 pb-2">{link}</a>
+                <a 
+                  key={link} 
+                  href={`#${link.toLowerCase()}`} 
+                  onClick={() => setIsMenuOpen(false)}
+                  className="text-white text-lg border-b border-white/10 pb-2"
+                >
+                  {link}
+                </a>
               ))}
-              <button className="bg-[#C81F08] text-white py-3 rounded-[4px] cursor-pointer"><a href="#quote">Get a Quote</a></button>
+              <button className="bg-[#C81F08] text-white py-3 rounded-[4px] cursor-pointer w-full text-left px-4 mt-2">
+                <a 
+                  href="#quote" 
+                  onClick={() => setIsMenuOpen(false)}
+                  className="w-full block"
+                >
+                  Get a Quote
+                </a>
+              </button>
             </motion.div>
           )}
         </AnimatePresence>
@@ -120,27 +135,27 @@ const Hero = () => {
           variants={staggerContainer}
           className="mt-[124px] max-w-[850px]"
         >
-          <motion.h3 variants={fadeInUp} className="text-white font-['Inter'] font-semibold text-[16px] leading-[24px] tracking-[0.8px] uppercase mb-4">
-            Premium Ready-Made Garments
+          <motion.h3 variants={fadeInUp} className="text-white font-['Inter'] font-semibold text-[16px] leading-[24px] tracking-[0.8px] uppercase mb-4 flex items-center gap-4 flex-wrap">
+            <span>Experience the Edge of Denim</span>
+            <span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-[#C81F08]"></span>
+            <span className="text-[#C81F08]">Go Wild, Go Denim</span>
           </motion.h3>
           
           <motion.h1 variants={fadeInUp} className="text-white font-['Poppins'] font-bold text-[40px] md:text-[60px] leading-[1.1] mb-6">
-            Your Trusted <span style={{ color: '#C81F08' }}>Clothing Sourcing</span> Partner in Bangladesh
+            <span style={{ color: '#C81F08' }}>Better</span> When It&apos;s On You
           </motion.h1>
 
           <motion.p variants={fadeInUp} className="text-[#D1D5DB] font-['Inter'] font-light text-[18px] md:text-[20px] leading-[28px] max-w-[680px] mb-10">
-            End-to-end apparel manufacturing and sourcing solutions. We bridge
-            the gap between global fashion brands and world-class production
-            facilities.
+            From concept to warehouse delivery in just 14 days, we provide the speed of retail with the scale of wholesale. Backed by 22 years of denim mastery.
           </motion.p>
 
           <motion.div variants={fadeInUp} className="flex flex-wrap gap-4 mb-20">
-            <button className="bg-[#C81F08] text-white px-8 py-4 rounded-[4px] font-['Inter'] font-medium text-[18px] leading-[28px] transition-all hover:bg-[#b01b07]">
-              Work With Us
-            </button>
-            <button className="bg-transparent border border-white text-white px-8 py-4 rounded-[4px] font-['Inter'] font-medium text-[18px] leading-[28px] transition-all hover:bg-white/10">
-              Explore Services
-            </button>
+            <a href="#quote" className="bg-[#C81F08] text-white px-8 py-4 rounded-[4px] font-['Inter'] font-medium text-[18px] leading-[28px] transition-all hover:bg-[#b01b07] inline-block">
+              Start Your Collection
+            </a>
+            <a href="#about" className="bg-transparent border border-white text-white px-8 py-4 rounded-[4px] font-['Inter'] font-medium text-[18px] leading-[28px] transition-all hover:bg-white/10 inline-block">
+              View Our Capabilities
+            </a>
           </motion.div>
         </motion.div>
 

@@ -2,29 +2,29 @@
 
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
-import { HandCoins, Award, Clock, Leaf } from 'lucide-react';
+import { Zap, Package, Clock, Palette } from 'lucide-react';
 
 const Prefer = () => {
   const features = [
     {
-      title: "Competitive Pricing",
-      desc: "Direct factory relationships ensuring the best FOB prices without compromising quality.",
-      icon: <HandCoins size={32} />
+      title: "Retail Speed, Wholesale Scale",
+      desc: "We provide the agility of retail speed combined with the massive production capacity of a global manufacturer.",
+      icon: <Zap size={32} />
     },
     {
-      title: "Uncompromised Quality",
-      desc: "Dedicated QC teams placed inside factories for inline and final AQL standard inspections.",
-      icon: <Award size={32} />
+      title: "Flexible Quantities",
+      desc: "Agile MOQs ready to execute any order seamlessly, accommodating runs from 100 to 10,000 pieces.",
+      icon: <Package size={32} />
     },
     {
-      title: "On-Time Delivery",
-      desc: "Strict critical path management to identify delays early and ensure deadlines are met.",
+      title: "14-Day Global Delivery",
+      desc: "Rapid fashion cycles bringing your collections from concept to warehouse delivery in just 14 days.",
       icon: <Clock size={32} />
     },
     {
-      title: "Sustainable Making",
-      desc: "Promoting green factories and sustainable materials (organic cotton, recycled poly).",
-      icon: <Leaf size={32} />
+      title: "Full-Service Branding",
+      desc: "Comprehensive support to establish your brand, from custom label preparation to third-party inspections.",
+      icon: <Palette size={32} />
     }
   ];
 
@@ -57,8 +57,8 @@ const Prefer = () => {
             viewport={{ once: true }}
             className="font-['Poppins'] font-bold text-[36px] leading-[40px]"
           >
-            <span style={{ color: '#C81F08' }}>Why Brands</span>{" "}
-            <span className="text-white">Prefer Wild</span>
+            <span style={{ color: '#C81F08' }}>Why Choose</span>{" "}
+            <span className="text-white">Wild</span>
           </motion.h2>
           
           {/* Decorative Underline */}

@@ -34,7 +34,7 @@ export default function FactoryVideos() {
                 playsInline
                 className="w-full h-full object-cover"
               >
-                <source src="https://cdn.wildbd.com/Wild-Rmg/wild-rmg-china.mp4" type="video/mp4" />
+                <source src="https://cdn.wildbd.com/Wild-Rmg/wild-rmg-bd.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
               
@@ -44,13 +44,19 @@ export default function FactoryVideos() {
             
             {/* Info Section */}
             <div className="p-6 md:p-8 flex items-start gap-4">
-              <div className="w-10 h-10 shrink-0 bg-[#FCF8F7] rounded-full flex items-center justify-center border border-[#F3E6E4]">
+              <div className="w-10 h-10 shrink-0 bg-[#FCF8F7] rounded-full flex items-center justify-center border border-[#F3E6E4] mt-1">
                 <MapPin className="w-4 h-4 text-[#D33A27]" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-gray-900 mb-1">Bangladesh Factory</h3>
-                <p className="text-[14px] text-gray-500 leading-relaxed">
-                  Our core RMG production hub, ensuring premium craftsmanship and adherence to international labor standards.
+                <p className="text-[13px] font-medium text-gray-900 mb-2">
+                  WILD DENIM / ALEYA APPARELS LIMITED
+                </p>
+                <p className="text-[14px] text-gray-500 leading-relaxed mb-3">
+                  244, Singair Road, Hemayetpur, Savar, Dhaka-1340
+                </p>
+                <p className="text-[14px] text-gray-600 leading-relaxed">
+                  Our core RMG production hub is the powerhouse for large-scale efficiency, combining skilled craftsmanship with modern industrial technology.
                 </p>
               </div>
             </div>
@@ -67,7 +73,7 @@ export default function FactoryVideos() {
                 playsInline
                 className="w-full h-full object-cover"
               >
-                <source src="https://cdn.wildbd.com/Wild-Rmg/wild-rmg-bd.mp4" type="video/mp4" />
+                <source src="https://cdn.wildbd.com/Wild-Rmg/wild-rmg-china.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
 
@@ -77,13 +83,19 @@ export default function FactoryVideos() {
             
             {/* Info Section */}
             <div className="p-6 md:p-8 flex items-start gap-4">
-              <div className="w-10 h-10 shrink-0 bg-[#FCF8F7] rounded-full flex items-center justify-center border border-[#F3E6E4]">
+              <div className="w-10 h-10 shrink-0 bg-[#FCF8F7] rounded-full flex items-center justify-center border border-[#F3E6E4] mt-1">
                 <MapPin className="w-4 h-4 text-[#D33A27]" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-gray-900 mb-1">China Factory</h3>
-                <p className="text-[14px] text-gray-500 leading-relaxed">
-                  Our advanced technology integration center, focusing on specialized fabrics and innovative manufacturing techniques.
+                <p className="text-[13px] font-medium text-gray-900 mb-2">
+                  Debin Garment Factory (德宾服装厂)
+                </p>
+                <p className="text-[14px] text-gray-500 leading-relaxed mb-3">
+                  Jinyuan 3rd Road, Dacheng Industrial Zone, Pingnan County, Guigang City, China
+                </p>
+                <p className="text-[14px] text-gray-600 leading-relaxed">
+                  Our advanced technology integration center focuses on intricate detailing, innovative fabric sourcing, and technical apparel excellence.
                 </p>
               </div>
             </div>
