@@ -55,7 +55,7 @@ const AboutWild = () => {
             }}
           >
             <Image 
-              src="/images/first.jpg" 
+              src="/images/wirehouse.jpeg" 
               alt="Factory Interior" 
               fill
               className="object-cover"
